@@ -1,0 +1,19 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Your Donation To {{charity.name}}
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list no-lines>
+        <ion-item>
+            <ion-label>Amount $</ion-label>
+            <ion-input placeholder="10.00" type="usd" [(ngModel)]="amount"></ion-input>
+        </ion-item>
+    </ion-list>
+    <button ion-button center (click)= "submittingPayment()">
+        Donate To {{charity.name}}
+    </button>
+</ion-content>

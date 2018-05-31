@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            {{charity.name}}
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <img src={{charity.imageUrl}}>
+    <h2>{{charity.name}}</h2>
+    <p>
+        <a href={{charity.websiteUrl}}>Website</a>
+    </p>
+    <h4 style="color: red">• {{charity.category}} •</h4>
+    <h3>Mission</h3>
+    <p>
+        {{charity.mission}}
+    </p>
+    <ion-fab right bottom>
+        <button ion-fab>
+            <ion-icon name="cash"></ion-icon>
+        </button>
+        <ion-fab-list side="left">
+            <button ion-fab color="dark" (click)="openingPaymentPortal(charity)">
+                <ion-icon name="logo-usd"></ion-icon>
+            </button>
+            <button ion-fab color="dark" (click)="addingToPortfolio()">
+                <ion-icon name="paper"></ion-icon>
+            </button>
+        </ion-fab-list>
+    </ion-fab>
+</ion-content>

@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Password Reset
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <p>
+        Please enter your email below and you will be sent a recovery email.
+    </p>
+    <ion-list>
+        <ion-item>
+            <ion-label floating>Email</ion-label>
+            <ion-input type="email"></ion-input>
+        </ion-item>
+        <p>
+            <button ion-button full icon-left (click)="presentLoading()">
+                <ion-icon name="mail"></ion-icon>Send Recovery Email
+            </button>
+        </p>
+        <img src="https://image.freepik.com/free-vector/message-notification-background_23-2147671665.jpg" class="responsive">
+    </ion-list>
+</ion-content>

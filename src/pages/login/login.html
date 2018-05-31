@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Login
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+        <img src="http://funkydigitalagency.co.uk/wp-content/uploads/2016/04/Charity-Hands.png" class = "responsive">
+    <ion-list>
+
+        <ion-item>
+            <ion-label floating>Email</ion-label>
+            <ion-input [(ngModel)]="email"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Password</ion-label>
+            <ion-input type="password"></ion-input>
+        </ion-item>
+        <p>
+            <button ion-button full icon-left (click)="presentLoading()">
+                <ion-icon name="person"></ion-icon>Login
+            </button>
+        </p>
+        <p>
+            Forgot your password? Reset your password below.
+            <button ion-button full icon-left (click)="navigateToReset()">
+                <ion-icon name="alert"></ion-icon>Password Reset
+            </button>
+        </p>
+    </ion-list>
+</ion-content>
