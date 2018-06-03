@@ -24,7 +24,7 @@ export class LoginPage {
     }
 
     navigateToTabs() {
-        this.navCtrl.push(TabsPage)
+        this.navCtrl.setRoot(TabsPage)
     }
 
     presentLoading() {

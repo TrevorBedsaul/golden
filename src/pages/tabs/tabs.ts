@@ -5,6 +5,7 @@ import { ExplorePage } from '../explore/explore';
 import { ProfilePage } from '../profile/profile';
 import { BrowsePage } from '../browse/browse';
 import { AccountPage } from '../account/account';
+
 @Component({
     selector: 'page-tabs',
     template: `
